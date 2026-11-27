@@ -64,5 +64,5 @@ jobs:
           if ($LASTEXITCODE -eq 0) {
             gh release upload $tag $zip SHA256.txt --clobber
           } else {
-            gh release create $tag $zip SHA256.txt --title "qianqu $tag" --generate-notes
+            gh release create $tag $zip SHA256.txt --title "qianqu $tag · 播放器" --generate-notes
           }
