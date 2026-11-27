@@ -38,7 +38,7 @@
   "type": "commonjs",
   "dependencies": {
     "@meting/core": "^1.6.2",
-    "iconv-lite": "^0.7.0",
+    "iconv-lite": "^0.7.3",
     "music-metadata": "^12.7.0"
   },
   "devDependencies": {
