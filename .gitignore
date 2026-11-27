@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-*/
+work/
+outputs/
+*.log
+*.zip
+*.7z
+*.rar
+.env
+.env.*
+.cache/
+Thumbs.db
+.DS_Store

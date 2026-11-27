@@ -1,0 +1,57 @@
+name: 功能建议
+description: 希望 qianqu 增加或调整某个功能
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提出具体、可验证的功能建议。涉及版权、会员或地区限制的功能，请说明合规边界。
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你遇到的问题
+      description: 现在哪里不方便？尽量描述使用场景
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 你希望怎么做
+      description: 描述交互、入口和预期结果
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 相关模块
+      options:
+        - 本地音乐 / 视频
+        - 网络音乐
+        - 歌词
+        - 歌单 / 收藏
+        - 界面 / 窗口
+        - 打包 / 发布
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 你考虑过的替代方案
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索现有 Issue，确认不是重复建议
+          required: true
+        - label: 这个功能不要求绕过版权、会员或地区限制
+          required: true

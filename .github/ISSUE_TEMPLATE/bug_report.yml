@@ -1,0 +1,90 @@
+name: Bug 反馈
+description: 播放、界面、网络音乐或歌词出现问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请尽量提供可复现的信息；不要在 Issue 中粘贴账号 Cookie、Token 或完整 Partitions 目录。
+
+  - type: input
+    id: version
+    attributes:
+      label: qianqu 版本
+      description: 在窗口标题、Releases 或 `%APPDATA%\qianqu` 附近查看
+      placeholder: "例如：v2.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: system
+    attributes:
+      label: 系统版本
+      placeholder: "例如：Windows 11 24H2 x64"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: 问题出现在哪个模块
+      options:
+        - 本地音乐
+        - 本地视频
+        - Bilibili
+        - 网易云音乐
+        - QQ 音乐
+        - 酷狗音乐
+        - 歌词
+        - 界面 / 窗口
+        - 打包 / 启动
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从启动开始，按顺序写清楚每一步
+      placeholder: |
+        1. 打开 qianqu
+        2. 进入网络音乐 → 网易云
+        3. 搜索 ...
+        4. 点击播放
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      description: 有报错文本时请直接粘贴
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 截图 / 日志
+      description: 可以拖入截图；日志请去掉个人路径、Cookie 和 Token
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索现有 Issue，确认不是重复问题
+          required: true
+        - label: 我没有在内容中粘贴账号 Cookie、Token 或密码
+          required: true

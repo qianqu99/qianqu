@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "如果 qianqu 对你的项目或学习有帮助，可以引用这个仓库。"
+title: "qianqu: a starry local and online music/video player"
+abstract: "A Windows Electron player for local music and video, Bilibili favorites and collections, and online music from NetEase Cloud Music, QQ Music and Kugou."
+authors:
+  - family-names: qianqu
+    given-names: qianqu
+version: 2.0.0
+date-released: 2026-11-27
+url: "https://github.com/qianqu99/qianqu"
+repository-code: "https://github.com/qianqu99/qianqu"
+license: MIT
+keywords:
+  - electron
+  - music-player
+  - video-player
+  - bilibili
+  - netease
+  - qqmusic
+  - kugou
+  - lyrics

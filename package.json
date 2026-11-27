@@ -1,0 +1,49 @@
+{
+  "name": "qianqu",
+  "productName": "qianqu",
+  "version": "2.0.0",
+  "description": "qianqu — 星空主题的本地音乐与视频播放器，支持 Bilibili / 网易云 / QQ 音乐 / 酷狗音乐",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qianqu99/qianqu.git"
+  },
+  "homepage": "https://github.com/qianqu99/qianqu#readme",
+  "bugs": {
+    "url": "https://github.com/qianqu99/qianqu/issues"
+  },
+  "scripts": {
+    "start": "electron .",
+    "smoke": "electron . --smoke",
+    "lint": "node --check main.js && node --check preload.js && node --check src/app.js",
+    "pack": "electron-packager . qianqu --platform=win32 --arch=x64 --out=dist-v200 --overwrite --no-asar --icon=assets/icon.ico --app-version=2.0.0 --ignore=\"^/work\" --ignore=\"^/tools\" --ignore=\"^/dist\" --ignore=\"^/dist-v1\" --ignore=\"^/dist-v200\" --win32metadata.CompanyName=qianqu --win32metadata.FileDescription=\"qianqu 音乐播放器\" --win32metadata.ProductName=\"qianqu\""
+  },
+  "keywords": [
+    "music",
+    "video",
+    "player",
+    "electron",
+    "bilibili",
+    "netease",
+    "qqmusic",
+    "kugou",
+    "lyrics",
+    "windows"
+  ],
+  "author": "qianqu",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@meting/core": "^1.6.2",
+    "iconv-lite": "^0.7.0",
+    "music-metadata": "^12.7.0"
+  },
+  "devDependencies": {
+    "@electron/packager": "^19.0.1",
+    "electron": "^45.4.1"
+  }
+}
+
