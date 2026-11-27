@@ -13,7 +13,7 @@
 [![Build](https://github.com/qianqu99/qianqu/actions/workflows/build.yml/badge.svg)](https://github.com/qianqu99/qianqu/actions/workflows/build.yml)
 [![Stars](https://img.shields.io/github/stars/qianqu99/qianqu?style=flat-square&color=f3c96b)](https://github.com/qianqu99/qianqu/stargazers)
 
-[下载](#下载) · [功能](#功能) · [截图](#截图) · [网络音乐](#网络音乐) · [歌词](#歌词) · [开发](#开发) · [常见问题](#常见问题) · [贡献](#贡献)
+[在线主页](https://qianqu99.github.io/qianqu/) · [下载](#下载) · [功能](#功能) · [截图](#截图) · [网络音乐](#网络音乐) · [歌词](#歌词) · [开发](#开发) · [常见问题](#常见问题) · [贡献](#贡献)
 
 </div>
 
@@ -191,6 +191,8 @@ qianqu/
 │  ├─ ARCHITECTURE.md          进程、协议、数据流说明
 │  ├─ FAQ.md                   常见问题
 │  ├─ release-notes-v2.0.0.md  发布说明
+│  ├─ index.html               GitHub Pages 主页
+│  ├─ site.css                 Pages 主页样式
 │  └─ social-preview.png       GitHub 社交预览图
 ├─ tools/
 │  ├─ make-starry-icon.py      生成星空图标
@@ -336,6 +338,6 @@ npm run pack
 
 **如果 qianqu 让你安静听完了某一首歌，欢迎点一个 Star。**
 
-[GitHub](https://github.com/qianqu99/qianqu) · [Releases](https://github.com/qianqu99/qianqu/releases) · [Issues](https://github.com/qianqu99/qianqu/issues)
+[在线主页](https://qianqu99.github.io/qianqu/) · [GitHub](https://github.com/qianqu99/qianqu) · [Releases](https://github.com/qianqu99/qianqu/releases) · [Issues](https://github.com/qianqu99/qianqu/issues)
 
 </div>

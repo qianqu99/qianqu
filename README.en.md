@@ -10,7 +10,7 @@
 [![License](https://img.shields.io/github/license/qianqu99/qianqu?style=flat-square&color=8ee6c8)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-3b82f6?style=flat-square)](#download)
 
-[中文](README.md) · [Download](#download) · [Screenshots](#screenshots) · [Development](#development)
+[中文](README.md) · [Website](https://qianqu99.github.io/qianqu/) · [Download](#download) · [Screenshots](#screenshots) · [Development](#development)
 
 </div>
 
