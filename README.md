@@ -322,7 +322,7 @@ npm run pack
 
 [MIT](LICENSE) © 2026 qianqu
 
-第三方依赖及许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+第三方依赖及许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。应用图标插画由项目作者提供，不在 MIT 代码许可范围内。
 
 ## 致谢
 

@@ -16,6 +16,10 @@ Electron 发行包中附带的 Chromium、Node.js 及其第三方组件许可证
 
 qianqu 不包含商业音乐、视频或歌词文件。Bilibili、网易云音乐、QQ 音乐、酷狗音乐的名称、接口和内容归各自平台及权利人所有。qianqu 只提供个人播放工具，不提供批量下载、去水印、绕过会员 / 地区限制或再分发功能。
 
+## 应用图标插画
+
+`assets/icon-art.jpg` 及由它生成的应用图标由项目作者提供，仅用于 qianqu 应用标识。图标插画不包含在 MIT 代码许可范围内；如果权利人对使用方式有异议，请通过 Issue 联系替换。
+
 ## 设计参考
 
 - 全屏歌词舞台交互方向参考 [Folia](https://github.com/chthollyphile/folia-major)（AGPL-3.0），未复制其源代码。
