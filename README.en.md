@@ -4,7 +4,7 @@
 
 # qianqu
 
-**A quiet starry music and video player for Windows.**
+**A quiet music and video player for Windows.**
 
 [![Release](https://img.shields.io/github/v/release/qianqu99/qianqu?style=flat-square&label=release&color=6fe7ff)](https://github.com/qianqu99/qianqu/releases/latest)
 [![License](https://img.shields.io/github/license/qianqu99/qianqu?style=flat-square&color=8ee6c8)](LICENSE)
@@ -20,7 +20,7 @@
 
 qianqu is an Electron desktop player that keeps local music, videos, Bilibili favorites and collections, and online music from NetEase Cloud Music, QQ Music and Kugou in one place.
 
-The main window uses a light "sea-salt bubble" theme; the player page, immersive lyrics and video cinema use a dark stage. The app icon and brand artwork are a pure starfield with no constellation lines.
+The main window uses a light "sea-salt bubble" theme; the player page, immersive lyrics and video cinema use a dark stage. The app icon uses the project's illustrated portrait and is framed with rounded corners and a warm border.
 
 ## Features
 
@@ -41,16 +41,16 @@ Online playback respects each platform's account, membership, copyright and regi
 | --- | --- |
 | ![home](docs/screenshots/home.png) | ![network](docs/screenshots/network.png) |
 
-| Immersive lyrics | Video cinema |
+| Player page | Video cinema |
 | --- | --- |
-| ![lyrics](docs/screenshots/lyrics.png) | ![cinema](docs/screenshots/cinema.png) |
+| ![player](docs/screenshots/player.png) | ![cinema](docs/screenshots/cinema.png) |
 
 ## Download
 
 Download the latest Windows x64 portable build from [Releases](https://github.com/qianqu99/qianqu/releases/latest):
 
 ```text
-qianqu-v2.0.0-win32-x64.zip
+qianqu-v2.0.1-win32-x64.zip
 ```
 
 Unzip and run `qianqu.exe`. No installer is required.
@@ -72,7 +72,7 @@ Build the Windows portable app:
 npm run pack
 ```
 
-The output is written to `dist-v200/qianqu-win32-x64/`.
+The output is written to `dist/qianqu-win32-x64/`.
 
 ## Project structure
 
@@ -80,7 +80,7 @@ The output is written to `dist-v200/qianqu-win32-x64/`.
 main.js             Electron main process
 preload.js          Secure renderer bridge
 src/                HTML, CSS and renderer application
-assets/             Starfield icons and brand artwork
+assets/             Illustrated app icon and brand artwork
 docs/               Screenshots and technical documentation
 tools/              Icon and social-preview generators
 .github/            Issue templates and build workflow

@@ -13,7 +13,7 @@ body:
     attributes:
       label: qianqu 版本
       description: 在窗口标题、Releases 或 `%APPDATA%\qianqu` 附近查看
-      placeholder: "例如：v2.0.0"
+      placeholder: "例如：v2.0.1"
     validations:
       required: true
 

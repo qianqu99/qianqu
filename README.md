@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/icon-512.png" width="132" alt="qianqu 星空图标">
+<img src="assets/icon-512.png" width="132" alt="qianqu 应用图标">
 
-# qianqu · 星空播放器
+# qianqu · 播放器
 
-**一片闪烁的星空，一个安静好用的本地 / 在线音乐与视频播放器。**
+**一个安静好用的本地 / 在线音乐与视频播放器。**
 
 [![Release](https://img.shields.io/github/v/release/qianqu99/qianqu?style=flat-square&label=release&color=6fe7ff)](https://github.com/qianqu99/qianqu/releases/latest)
 [![License](https://img.shields.io/github/license/qianqu99/qianqu?style=flat-square&color=8ee6c8)](LICENSE)
@@ -23,7 +23,7 @@
 
 **qianqu** 是一个基于 Electron 的 Windows 桌面播放器，把本地音乐、视频、B 站收藏夹与订阅合集、网易云 / QQ 音乐 / 酷狗搜索和歌单放进同一个界面。
 
-主界面是浅色「海盐气泡」主题，播放页、沉浸歌词和视频影院使用深色舞台。应用图标、侧栏标志、启动画面和首页主视觉统一为一片**纯星野**，没有星座连线。
+主界面是浅色「海盐气泡」主题，播放页、沉浸歌词和视频影院使用深色舞台。应用图标、侧栏标志、启动画面和首页主视觉使用项目作者提供的插画，并做了圆角、暖色阴影和柔和边框，放在浅色和深色背景里都不会显得突兀。
 
 - 不依赖云端音乐库，不修改你的本地文件
 - 网络音乐只在你主动搜索、打开榜单或导入歌单时访问平台接口
@@ -31,7 +31,7 @@
 - 登录使用各平台官方页面，Cookie 保存在独立会话分区
 - 所有界面、逻辑和图标都在本仓库中，可直接运行、修改和打包
 
-> 当前发布版本：**v2.0.0** · Windows 10 / 11 x64 · 绿色免安装
+> 当前发布版本：**v2.0.1** · Windows 10 / 11 x64 · 绿色免安装
 
 ## 功能
 
@@ -45,7 +45,7 @@
 | 网易云 / QQ / 酷狗 | 搜索、登录官方页面、账号歌单读取、公开歌单链接导入 |
 | 歌词 | 本地 `.lrc`、内嵌歌词、B 站字幕校验、网易云 / QQ 多来源候选、偏移与逐句对齐 |
 | 播放体验 | 播放队列、倍速、音量、进度拖动、Media Session、窗口状态记忆 |
-| 视觉 | 9 种沉浸歌词主题、星野图标、浅色主界面、深色播放舞台 |
+| 视觉 | 9 种沉浸歌词主题、插画图标、浅色主界面、深色播放舞台 |
 | 数据 | 自动保存音乐库、歌单、收藏、最近播放、在线曲目和窗口状态 |
 
 ## 截图
@@ -54,9 +54,9 @@
 | --- | --- |
 | ![首页](docs/screenshots/home.png) | ![网络音乐](docs/screenshots/network.png) |
 
-| 沉浸歌词 | 视频影院 |
+| 播放页 | 视频影院 |
 | --- | --- |
-| ![沉浸歌词](docs/screenshots/lyrics.png) | ![视频影院](docs/screenshots/cinema.png) |
+| ![播放页](docs/screenshots/player.png) | ![视频影院](docs/screenshots/cinema.png) |
 
 ## 下载
 
@@ -65,16 +65,16 @@
 前往 **[Releases](https://github.com/qianqu99/qianqu/releases/latest)** 下载：
 
 ```text
-qianqu-v2.0.0-win32-x64.zip
+qianqu-v2.0.1-win32-x64.zip
 ```
 
 解压后双击 `qianqu.exe` 即可运行，不需要安装，也不会写入系统目录。
 
 直接下载：
 
-- [qianqu v2.0.0 · Windows x64](https://github.com/qianqu99/qianqu/releases/download/v2.0.0/qianqu-v2.0.0-win32-x64.zip)
-- [SHA256 校验文件](https://github.com/qianqu99/qianqu/releases/download/v2.0.0/SHA256.txt)
-- [源代码 zip](https://github.com/qianqu99/qianqu/archive/refs/tags/v2.0.0.zip)
+- [qianqu v2.0.1 · Windows x64](https://github.com/qianqu99/qianqu/releases/download/v2.0.1/qianqu-v2.0.1-win32-x64.zip)
+- [SHA256 校验文件](https://github.com/qianqu99/qianqu/releases/download/v2.0.1/SHA256.txt)
+- [源代码 zip](https://github.com/qianqu99/qianqu/archive/refs/tags/v2.0.1.zip)
 
 ### 系统要求
 
@@ -88,7 +88,7 @@ qianqu-v2.0.0-win32-x64.zip
 
 ## 快速开始
 
-1. 解压 `qianqu-v2.0.0-win32-x64.zip`。
+1. 解压 `qianqu-v2.0.1-win32-x64.zip`。
 2. 双击 `qianqu.exe`。
 3. 点侧栏左下角「添加文件夹」，或把音乐 / 视频直接拖进窗口。
 4. 在「网络音乐」里选择 Bilibili、网易云、QQ 音乐或酷狗。
@@ -164,7 +164,7 @@ qianqu 的歌词不是简单按总时长拉伸，而是按来源和版本做匹�
 
 - **Electron 45**：主进程、窗口、协议代理、会话与 IPC
 - **原生 HTML / CSS / JavaScript**：没有前端框架，方便直接改界面
-- **Canvas**：沉浸歌词的星野、频谱和动效
+- **Canvas**：沉浸歌词的粒子、频谱和动效
 - **music-metadata**：本地音频元数据与内嵌封面
 - **@meting/core**：网易云 / QQ / 酷狗搜索、播放地址、歌单和歌词
 - **iconv-lite**：GBK 等本地歌词编码
@@ -182,20 +182,21 @@ qianqu/
 │  ├─ theme-fresh.css          浅色「海盐气泡」主题覆盖
 │  └─ app.js                   播放器、视图、歌单、队列、歌词逻辑
 ├─ assets/
-│  ├─ icon.png                 1024px 星空图标
-│  ├─ icon-512.png             512px 星空图标
+│  ├─ icon.png                 1024px 应用图标
+│  ├─ icon-512.png             512px 应用图标
 │  ├─ icon.ico                 Windows 多尺寸图标
+│  ├─ icon-art.jpg             图标插画原图
 │  └─ brand-mark.png           侧栏 / 启动页 / 首页品牌图
 ├─ docs/
 │  ├─ screenshots/             README 截图
 │  ├─ ARCHITECTURE.md          进程、协议、数据流说明
 │  ├─ FAQ.md                   常见问题
-│  ├─ release-notes-v2.0.0.md  发布说明
+│  ├─ release-notes-v2.0.1.md  发布说明
 │  ├─ index.html               GitHub Pages 主页
 │  ├─ site.css                 Pages 主页样式
 │  └─ social-preview.png       GitHub 社交预览图
 ├─ tools/
-│  ├─ make-starry-icon.py      生成星空图标
+│  ├─ make-portrait-icon.py    从插画生成应用图标
 │  └─ make-social-preview.py   生成社交预览图
 ├─ .github/                    Issue / PR 模板、Dependabot、构建工作流
 ├─ 使用说明.txt                给最终用户的快速说明
@@ -239,7 +240,7 @@ npm run lint
 npm run pack
 ```
 
-产物位于 `dist-v200/qianqu-win32-x64/`，双击 `qianqu.exe` 运行。
+产物位于 `dist/qianqu-win32-x64/`，双击 `qianqu.exe` 运行。
 
 ### 目录约定
 
@@ -313,9 +314,9 @@ npm run pack
 
 ## 版本记录
 
-当前版本 **v2.0.0**：星空图标、qianqu 更名、四平台网络音乐、视频全屏影院、右上角按钮悬停修复、移除旧工具栏和 Apple 试听。
+当前版本 **v2.0.1**：插画图标、播放器品牌、四平台网络音乐、视频全屏影院、右上角按钮悬停修复、移除旧工具栏和 Apple 试听。
 
-完整记录见 [CHANGELOG.md](CHANGELOG.md) 和 [v2.0.0 发布说明](docs/release-notes-v2.0.0.md)。
+完整记录见 [CHANGELOG.md](CHANGELOG.md) 和 [v2.0.1 发布说明](docs/release-notes-v2.0.1.md)。
 
 ## 许可
 

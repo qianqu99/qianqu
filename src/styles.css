@@ -230,9 +230,9 @@ img {
   display: grid;
   place-items: center;
   border-radius: 14px;
-  background: var(--grad);
+  background: #f8eee6;
   color: #04121f;
-  box-shadow: 0 10px 26px rgba(93, 193, 255, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 26px rgba(190, 107, 123, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .brand-mark .icon {
@@ -1748,25 +1748,22 @@ img {
   animation: spin 40s linear infinite;
 }
 
-.hero-stars {
+.hero-portrait {
   position: relative;
   z-index: 2;
-  width: min(19vw, 230px);
-  height: min(19vw, 230px);
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow:
-    0 18px 54px rgba(80, 206, 255, 0.3),
-    0 0 0 1px rgba(199, 241, 255, 0.22);
+  width: min(20vw, 242px);
+  height: min(20vw, 242px);
+  border-radius: 32px;
+  filter: drop-shadow(0 20px 48px rgba(121, 68, 86, 0.22));
   animation: float 7s ease-in-out infinite;
 }
 
-.hero-stars img {
+.hero-portrait img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
-  transform: scale(1.08);
+  border-radius: 32px;
 }
 
 .hero-wave {
@@ -1775,8 +1772,8 @@ img {
   right: 6%;
   bottom: 22px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(111, 231, 255, 0.45), transparent);
-  box-shadow: 0 0 24px rgba(111, 231, 255, 0.35);
+  background: linear-gradient(90deg, transparent, rgba(235, 155, 171, 0.55), rgba(255, 214, 145, 0.45), transparent);
+  box-shadow: 0 0 24px rgba(235, 155, 171, 0.24);
 }
 
 @keyframes float {
@@ -5843,9 +5840,9 @@ body.video-cinema .video-cinema-exit {
   display: grid;
   place-items: center;
   border-radius: 20px;
-  background: var(--grad);
+  background: #f8eee6;
   color: #05131f;
-  box-shadow: 0 18px 44px rgba(96, 183, 255, 0.26);
+  box-shadow: 0 18px 44px rgba(190, 107, 123, 0.24);
   animation: float 3.4s ease-in-out infinite;
 }
 
@@ -5899,7 +5896,7 @@ body.video-cinema .video-cinema-exit {
   :root { --side: 218px; --bar: 92px; }
   .hero { grid-template-columns: 1fr; padding: 30px; }
   .hero-art { position: absolute; right: -20px; top: -10px; opacity: 0.3; }
-  .hero-stars { width: 220px; height: 220px; }
+  .hero-portrait { width: 220px; height: 220px; }
   .hero-orb { width: 240px; height: 240px; }
   .home-bottom { grid-template-columns: 1fr; }
   .search { width: 220px; }

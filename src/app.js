@@ -607,9 +607,9 @@
     let html = `
       <section class="hero">
         <div class="hero-copy">
-          <div class="hero-kicker"><span class="dot"></span>YOUR OCEAN OF SOUND</div>
+          <div class="hero-kicker"><span class="dot"></span>YOUR MUSIC, YOUR MOMENT</div>
           <h1>${esc(greeting())}</h1>
-          <p>${state.tracks.length ? '海面很安静，正好适合听点什么。你的音乐和视频都好好地收在qianqu里。' : '把喜欢的音乐和视频放进来，qianqu会替你把它们收好。干净、安静，只留下声音。'}</p>
+          <p>${state.tracks.length ? '这里很安静，正好适合听点什么。你的音乐和视频都好好地收在 qianqu 里。' : '把喜欢的音乐和视频放进来，qianqu 会替你把它们收好。干净、安静，只留下声音。'}</p>
           <div class="hero-actions">
             ${state.tracks.length
               ? `<button class="hero-play" data-action="hero-random">${icon('play')}<span>随便听听</span></button>
@@ -625,7 +625,7 @@
         </div>
         <div class="hero-art">
           <div class="hero-orb"></div>
-          <div class="hero-stars"><img src="../assets/brand-mark.png" alt=""></div>
+          <div class="hero-portrait"><img src="../assets/brand-mark.png" alt=""></div>
           <div class="hero-wave"></div>
         </div>
       </section>`;
@@ -633,7 +633,7 @@
     if (!state.tracks.length) {
       html += emptyState({
         iconName: 'wave',
-        title: '这里还是一片安静的海',
+        title: '这里还很安静',
         text: '拖入文件或文件夹，也可以从电脑里慢慢挑选。<br>支持 MP3、FLAC、WAV、M4A、OGG、MP4、WebM、MOV 等常见格式。',
         actions: [
           { label: '添加文件', action: 'add-files', icon: 'plus' },

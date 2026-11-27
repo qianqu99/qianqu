@@ -8,7 +8,7 @@ qianqu 是免费绿色版，没有购买代码签名证书。点「更多信息�
 
 ### 需要安装吗？
 
-不需要。下载 `qianqu-v2.0.0-win32-x64.zip`，解压后双击 `qianqu.exe`。程序不会写入 `Program Files`，删除文件夹即可卸载。
+不需要。下载 `qianqu-v2.0.1-win32-x64.zip`，解压后双击 `qianqu.exe`。程序不会写入 `Program Files`，删除文件夹即可卸载。
 
 ### 为什么启动后没有声音？
 
@@ -111,7 +111,7 @@ npm install
 ### 打包输出在哪里？
 
 ```text
-dist-v200/qianqu-win32-x64/
+dist/qianqu-win32-x64/
 ```
 
 双击 `qianqu.exe` 运行。

@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: qianqu-win32-x64
-          path: dist-v200/qianqu-win32-x64
+          path: dist/qianqu-win32-x64
           if-no-files-found: error
 
       - name: Create portable zip and checksum
@@ -47,7 +47,7 @@ jobs:
         run: |
           $tag = $env:GITHUB_REF_NAME
           $zip = "qianqu-$tag-win32-x64.zip"
-          Compress-Archive -Path "dist-v200/qianqu-win32-x64" -DestinationPath $zip -CompressionLevel Optimal
+          Compress-Archive -Path "dist/qianqu-win32-x64" -DestinationPath $zip -CompressionLevel Optimal
           $hash = (Get-FileHash -Algorithm SHA256 -LiteralPath $zip).Hash
           "qianqu $tag`n$zip  $hash" | Set-Content -Path SHA256.txt -Encoding utf8
           Get-Content SHA256.txt
