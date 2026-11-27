@@ -35,7 +35,7 @@ jobs:
           ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
 
       - name: Upload unpacked build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: qianqu-win32-x64
           path: dist-v200/qianqu-win32-x64
